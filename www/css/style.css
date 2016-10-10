@@ -1,0 +1,146 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:100,200,300,400,500,600,700,800,900|Lora:400,400i,700,700i';
+* {
+  /*transition: 100ms all;*/
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.background {
+  background-color: #333333;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 1.0);
+  transition: 500ms all;
+}
+
+#preloader.active {
+  opacity: 1;
+}
+
+#preloader {
+  opacity: 0;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  margin-top: -66px;
+  left: 50%;
+  margin-left: -66px;
+}
+
+.section {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  transition: 300ms transform;
+  z-index: -1;
+  border: 0;
+  border-radius: 0;
+}
+
+.section.active {
+  z-index: 1;
+}
+
+.section {
+  transform: translateY(100%);
+}
+
+.section.active.slide-up {
+  transform: translateY(-100%);
+}
+
+.section.active,
+.section.slide-up {
+  transform: translateY(0vh);
+}
+
+.menu-wrapper {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  transition: 300ms transform;
+  border: 0;
+  border-radius: 0;
+}
+
+.glyphicon-th-large {
+  font-size: 30px;
+}
+
+.menu-icon {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .menu-wrapper {
+    transform: translateX(-100%);
+  }
+  .section {
+    width: 100%;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-wrapper.slide-in-left {
+    transform: translateX(0%);
+    z-index: 2;
+  }
+}
+
+.section .panel-body {
+  height: 100%;
+}
+
+.v-align {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.v-align-content {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+
+/*
+Home
+*/
+
+.home-section .title {}
+
+.home-section .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 15px;
+  padding-bottom: 15px;
+}
