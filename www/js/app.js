@@ -18,8 +18,6 @@
             this.src = defaultValues.imagePlaceholder;
         };
         for (var i = 0, l = imageList.length; i < l; i++) {
-            console.log(imageList[i]);
-            // imageList[i].onload = imageLoadFunction;
             imageList[i].onerror = imageErrorFunction;
         }
     };
@@ -48,11 +46,13 @@
             blockNavigation = true;
             previousMenu.removeClass("active");
             nextMenu.addClass("active");
+            nextSection.scrollTop(0);
 
             $(".menu-wrapper").addClass("slide-out-left");
             $(".menu-wrapper").removeClass("slide-in-left");
             previousSection.addClass("slide-up");
             nextSection.addClass("slide-up");
+
             setTimeout(function () {
                 blockNavigation = false;
                 $(".menu-wrapper").removeClass("slide-out-left");
@@ -62,6 +62,12 @@
                 previousSection.removeClass("slide-up");
             }, 300);
         });
+        // $(".section").on("scroll", function () {
+        //     console.log("start");
+        //     if ($(this)[0].scrollHeight - $(this).scrollTop() == $(this).outerHeight()) {
+        //         console.log("end");
+        //     }
+        // })
     };
 
     var bindMenu = function () {
@@ -71,8 +77,8 @@
     };
 
     var setResume = function () {
-        var resume = $("#resume embed");
-        resume[0].height = (($("#resume").height() - $("#resume .page-header").height()));
+        var resume = $("#resume iframe");
+        resume[0].height = (($("#resume").height() - $("#resume .page-header").height() - 100)) + "px";
         resume[0].width = ("100%");
         resume.css("display", "block");
     };

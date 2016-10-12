@@ -11,6 +11,7 @@ body {
   font-family: 'Poiret One', cursive;
   font-size: 40px;
 }
+
 .caption>h3 {
   font-size: 30px;
 }
@@ -167,6 +168,7 @@ Home
   bottom: 0;
   padding: 0 15px;
   padding-bottom: 15px;
+  text-align: right;
 }
 
 .carousel-caption {
@@ -178,4 +180,28 @@ Home
 
 p {
   word-wrap: break-word;
+}
+
+#contact .thumbnail .glyphicon {
+  font-size: 50px;
+}
+
+.social {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-image: url(../img/social.png);
+  background-size: 469px;
+}
+
+.social.facebook {
+  background-position: 85px 567px;
+}
+
+.social.twitter {
+  background-position: 86px 135px;
+}
+
+.social.github {
+  background-position: 423px 472px;
 }
