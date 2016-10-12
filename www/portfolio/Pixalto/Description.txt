@@ -1,0 +1,15 @@
+Overview
+
+Pixalto is a 2D sidescrolling platformer that uses the concepts of procedural rhetoric and meaningful play to explore aggression, pacifism and balance in interpersonal relationships. This game was created in Unity2D using C#. 
+
+My Role
+
+Game Designer
+Programmer
+Level Designer
+
+Timeframe : Nov 2015 -- May 2016
+
+Link: pending
+
+Trailer link: https://www.youtube.com/watch?v=2yzNtdoN_Qk (put this as an embedded vid along with the screenshots if possible)

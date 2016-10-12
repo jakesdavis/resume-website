@@ -1,0 +1,11 @@
+Overview 
+
+Addicted is a beat'em up style dungeon crawler about fighting embodied addictions. This game was made in under 48 hours in Unity2D with C# as part of Global Game Jam 2016. 
+
+My Role
+
+Programmer
+
+Timeframe: Jan 2016
+
+Link : http://globalgamejam.org/2016/games/addicted

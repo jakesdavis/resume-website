@@ -1,16 +1,29 @@
 (function () {
     var $ = jQuery;
 
-    var preloader = $("#preloader");
-    preloader.removeClass("active");
+    var defaultValues = {
+        imagePlaceholder: "img/placeholder.png"
+    };
 
-    // var imageList = $("img");
-    // var imageLoadFunction = function () {
-    //     console.log("Loaded");
-    // };
-    // for (var i = 0, l = imageList.length; i < l; i++) {
-    //     imageList[i].onload = imageLoadFunction;
-    // }
+
+    var imageHandlers = function () {
+        var preloader = $("#preloader");
+        preloader.removeClass("active");
+
+        var imageList = $("img");
+        var imageLoadFunction = function () {
+            console.log("Loaded");
+        };
+        var imageErrorFunction = function () {
+            this.src = defaultValues.imagePlaceholder;
+        };
+        for (var i = 0, l = imageList.length; i < l; i++) {
+            console.log(imageList[i]);
+            // imageList[i].onload = imageLoadFunction;
+            imageList[i].onerror = imageErrorFunction;
+        }
+    };
+
 
     var bindNavigationHandlers = function () {
         var blockNavigation = false;
@@ -25,16 +38,24 @@
             var nextSection = $("#" + this.getAttribute("data-href"));
 
             if (nextMenu.hasClass("active") || blockNavigation) {
+                $(".menu-wrapper").addClass("slide-out-left");
+                setTimeout(function () {
+                    $(".menu-wrapper").removeClass("slide-in-left");
+                    $(".menu-wrapper").removeClass("slide-out-left");
+                }, 300);
                 return;
             }
             blockNavigation = true;
             previousMenu.removeClass("active");
             nextMenu.addClass("active");
 
+            $(".menu-wrapper").addClass("slide-out-left");
+            $(".menu-wrapper").removeClass("slide-in-left");
             previousSection.addClass("slide-up");
             nextSection.addClass("slide-up");
             setTimeout(function () {
                 blockNavigation = false;
+                $(".menu-wrapper").removeClass("slide-out-left");
                 nextSection.addClass("active");
                 nextSection.removeClass("slide-up");
                 previousSection.removeClass("active");
@@ -48,12 +69,20 @@
             $(".menu-wrapper").addClass("slide-in-left");
         });
     };
+
+    var setResume = function () {
+        var resume = $("#resume embed");
+        resume[0].height = (($("#resume").height() - $("#resume .page-header").height()));
+        resume[0].width = ("100%");
+        resume.css("display", "block");
+    };
     var initialize = function () {
         bindNavigationHandlers();
         bindMenu();
+        setResume();
     };
-
     $(document).ready(function () {
         initialize();
     });
+    imageHandlers();
 }());

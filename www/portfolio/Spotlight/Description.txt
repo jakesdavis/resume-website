@@ -1,0 +1,12 @@
+Overview
+
+Spotlight is a platformer featuring a solar powered robot, created as a learning exercise to figure out the newly released Amazon Lumberyard. 
+
+My Role:
+
+Game Designer
+Programmer
+
+Timeframe: February 2016
+
+Link: https://github.com/kangareuben/LumberyardJam

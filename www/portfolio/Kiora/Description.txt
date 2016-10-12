@@ -1,0 +1,14 @@
+Overview
+
+Kiora is a 2D sidescroller featuring a mermaid who ventures to the depths of hell in order to save her people, only to learn that power, even nobly sought, comes with a terrible price. 
+
+My Role
+
+Game Designer
+Producer
+Integration & Testing
+
+Timeframe : Sep 2015 -- Dec 2015
+
+Link: www.github.com/steinaf/Kiora
+

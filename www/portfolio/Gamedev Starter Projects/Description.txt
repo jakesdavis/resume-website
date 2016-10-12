@@ -1,0 +1,10 @@
+Overview
+
+This is a collection of small personal projects created in my free time to practice making small games. It includes projects done in both Unity and JS.
+
+My Role:
+Solo project(s)
+
+Timeframe: various
+
+Link: https://github.com/steinaf/gamedev-learning-projects

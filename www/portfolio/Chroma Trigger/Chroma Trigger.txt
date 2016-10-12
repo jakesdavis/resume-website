@@ -1,0 +1,14 @@
+Overview
+
+Chroma Trigger is an FPS platformer where your gun shoots different colors of paint, allowing you to change the properties of painted platforms. The game also allows you to mix paints to discover new abilities.
+
+My Role
+
+Game Designer
+Level Designer
+
+Timeframe
+
+Mar 2016
+
+Link: (no link for now)

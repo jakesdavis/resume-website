@@ -1,0 +1,12 @@
+Overview
+
+I analyzed the balance and underlying mathematics behind existing cards for EPIC, a trading card game. I created a hypothetical mini expansion that introduced a new mechanic using the derived cost curve. 
+
+My Role:
+
+Solo project
+
+Timeframe: Sep 2015 -- Dec 2015
+
+Link: https://github.com/steinaf/epic-balance-spreadsheet
+
