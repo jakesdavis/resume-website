@@ -87,6 +87,15 @@ body {
   transform: translateY(0vh);
 }
 
+#portfolio .caption div>h5>span+label:before {
+  content: "";
+  padding: 2px;
+}
+
+#portfolio .caption div p {
+  margin-top: 10px;
+}
+
 .menu-wrapper {
   /*width: 35%;*/
   height: 100%;
