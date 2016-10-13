@@ -125,6 +125,11 @@ body {
   transition: 300ms all;
 }
 
+.menu-wrapper .list-group-item,
+.menu-wrapper .list-group-item label {
+  cursor: pointer;
+}
+
 .menu-wrapper .list-group-item:focus,
 .menu-wrapper .list-group-item.active {
   background-color: rgba(0, 0, 0, 0.5);
