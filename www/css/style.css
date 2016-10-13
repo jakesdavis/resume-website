@@ -250,6 +250,18 @@ p {
   background-size: 469px;
 }
 
+#contact .social {
+  height: 50px;
+  width: 59px;
+  display: inline-block;
+  background-image: url(../img/social.png);
+  background-size: 469px;
+}
+
+#contact .social.linkedin {
+  background-position: 432px 379px;
+}
+
 .social.facebook {
   background-position: 85px 567px;
 }
