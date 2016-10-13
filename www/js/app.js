@@ -28,44 +28,71 @@
         $("body").on("click", ".menu-items li", function (event) {
             event.preventDefault();
             event.stopImmediatePropagation();
+            var body = $("body");
+            var nextSection = $("#" + this.getAttribute("data-href"));
+            body.stop().animate({
+                scrollTop: nextSection[0].offsetTop
+            }, '500', 'swing', function () {
+
+            });
 
             var previousMenu = $(".menu-items li.active");
             var nextMenu = $(this);
 
-            var previousSection = $("section.active");
-            var nextSection = $("#" + this.getAttribute("data-href"));
+            // var previousSection = $("section.active");
 
-            if (nextMenu.hasClass("active") || blockNavigation) {
-                $(".menu-wrapper").addClass("slide-out-left");
-                setTimeout(function () {
-                    $(".menu-wrapper").removeClass("slide-in-left");
-                    $(".menu-wrapper").removeClass("slide-out-left");
-                }, 300);
-                return;
-            }
-            blockNavigation = true;
+
+            // if (nextMenu.hasClass("active") || blockNavigation) {
+            //     $(".menu-wrapper").addClass("slide-out-left");
+            //     setTimeout(function () {
+            //         $(".menu-wrapper").removeClass("slide-in-left");
+            //         $(".menu-wrapper").removeClass("slide-out-left");
+            //     }, 300);
+            //     return;
+            // }
+            // blockNavigation = true;
             previousMenu.removeClass("active");
             nextMenu.addClass("active");
-            nextSection.scrollTop(0);
+            // nextSection.scrollTop(0);
 
-            $(".menu-wrapper").addClass("slide-out-left");
-            $(".menu-wrapper").removeClass("slide-in-left");
-            previousSection.addClass("slide-up");
-            nextSection.addClass("slide-up");
+            // $(".menu-wrapper").addClass("slide-out-left");
+            // $(".menu-wrapper").removeClass("slide-in-left");
+            // previousSection.addClass("slide-up");
+            // nextSection.addClass("slide-up");
 
-            setTimeout(function () {
-                blockNavigation = false;
-                $(".menu-wrapper").removeClass("slide-out-left");
-                nextSection.addClass("active");
-                nextSection.removeClass("slide-up");
-                previousSection.removeClass("active");
-                previousSection.removeClass("slide-up");
-            }, 300);
+            // setTimeout(function () {
+            //     blockNavigation = false;
+            //     $(".menu-wrapper").removeClass("slide-out-left");
+            //     nextSection.addClass("active");
+            //     nextSection.removeClass("slide-up");
+            //     previousSection.removeClass("active");
+            //     previousSection.removeClass("slide-up");
+            // }, 300);
         });
-        // $(".section").on("scroll", function () {
-        //     console.log("start");
-        //     if ($(this)[0].scrollHeight - $(this).scrollTop() == $(this).outerHeight()) {
-        //         console.log("end");
+        var sectionTopList = [];
+        var sectionList = $("section");
+        for (var i = 0, l = sectionList.size(); i < l; i++) {
+            sectionTopList.push({
+                id: sectionList[i].id,
+                offsetTop: sectionList[i].offsetTop,
+                scrollHeight: sectionList[i].scrollHeight
+            })
+        }
+        console.log(sectionTopList);
+        // $(document).on("scroll", function () {
+        //     for (var i = sectionTopList.length - 1, l = 0; i >= l; i--) {
+        //         if ($(this).scrollTop() < (sectionTopList[i].offsetTop - 50)) {
+        //             console.log(sectionTopList[i].id, $(this).scrollTop(), sectionTopList[i].offsetTop);
+        //             if (!$("[data-href='" + sectionTopList[i].id + "']").hasClass("active")) {
+        //                 var previousMenu = $(".menu-items li.active");
+        //                 var nextMenu = $("[data-href='" + sectionTopList[i].id + "']");
+        //                 console.log(nextMenu);
+        //                 previousMenu.removeClass("active");
+        //                 nextMenu.addClass("active");
+        //             } else {
+        //                 // break;
+        //             }
+        //         }
         //     }
         // })
     };
