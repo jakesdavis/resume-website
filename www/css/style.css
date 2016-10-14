@@ -361,9 +361,33 @@ p {
   border-radius: 5px;
 }
 
+.home-section .footer a.active,
 .home-section .footer a:focus,
 .home-section .footer a:hover {
   background-color: #484848;
+}
+
+.home-section .footer a {
+  text-decoration: none;
+}
+
+.home-section .footer a span.description {
+  width: 0;
+  height: 0;
+  transition: 200ms all;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.home-section .footer a.active span.description,
+.home-section .footer a:focus span.description,
+.home-section .footer a:hover span.description {
+  font-size: 22px;
+  color: #b3b3b3;
+  padding: 0 10px 0 0px;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
 }
 
 .tooltip.top .tooltip-arrow {

@@ -110,7 +110,7 @@
     };
 
     var bindMenu = function () {
-        $("body").on("touchstart", ".menu-icon span", function (event) {
+        $("body").on("click touchstart", ".menu-icon span", function (event) {
             $(".menu-wrapper").toggleClass("slide-in-left");
             $(".menu-icon .glyphicon").toggleClass("glyphicon-remove");
         });
@@ -159,7 +159,7 @@
         setResume();
         setPortfolio();
         // $("body ").niceScroll();
-        $('[data-toggle="tooltip"]').tooltip();
+        // $('[data-toggle="tooltip"]').tooltip();
     };
     $(document).ready(function () {
         initialize();
