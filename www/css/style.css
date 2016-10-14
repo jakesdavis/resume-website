@@ -278,7 +278,7 @@ Home
 
 .home-section .title {}
 
-.home-section .footer {
+.footer {
   position: fixed;
   left: 0;
   right: 0;
@@ -288,6 +288,7 @@ Home
   text-align: right;
   background: rgba(0, 0, 0, 0.8);
   color: rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .carousel-caption {
@@ -352,7 +353,7 @@ p {
   background-position: 423px 472px;
 }
 
-.home-section .footer a {
+.footer a {
   display: inline-block;
   vertical-align: middle;
   font-size: 26px;
@@ -361,17 +362,17 @@ p {
   border-radius: 5px;
 }
 
-.home-section .footer a.active,
-.home-section .footer a:focus,
-.home-section .footer a:hover {
+.footer a.active,
+.footer a:focus,
+.footer a:hover {
   background-color: #484848;
 }
 
-.home-section .footer a {
+.footer a {
   text-decoration: none;
 }
 
-.home-section .footer a span.description {
+.footer a span.description {
   width: 0;
   height: 0;
   transition: 200ms all;
@@ -379,9 +380,9 @@ p {
   overflow: hidden;
 }
 
-.home-section .footer a.active span.description,
-.home-section .footer a:focus span.description,
-.home-section .footer a:hover span.description {
+.footer a.active span.description,
+.footer a:focus span.description,
+.footer a:hover span.description {
   font-size: 22px;
   color: #b3b3b3;
   padding: 0 10px 0 0px;
