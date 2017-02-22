@@ -1,0 +1,13 @@
+Overview
+
+Chaotic Oscillators for Generative 3D Art is an interactive artwork that aims to generate three-dimensional non-patterns within a web browser. The user builds their own aesthetic experience by controlling parameters which influence the generation algorithm.
+
+My Role
+Javascript Programmer
+
+Timeframe : Aug 2016 -- Dec 2016
+
+Link: https://github.com/kangareuben/chaoticOscillators
+
+Screenshot Captions:
+none

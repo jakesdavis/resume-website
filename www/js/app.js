@@ -7,7 +7,7 @@
 
 
     var imageHandlers = function () {
-        var imageList = $("img, iframe");
+        var imageList = $("img");
         var imageReady = 0;
         var imageLoadFunction = function () {
             imageReady++;

@@ -1,0 +1,16 @@
+Overview 
+
+Gloom Box [working title] is a music based puzzle platformer featuring a girl named Muse and her sentient boom box, Gloom. Together, they journey through the musical world of Opus, changing their world and solving puzzles through playing and mixing musical tracks.
+
+My Role
+
+Game Designer
+Unity/C# Programmer
+Prototyper
+
+Timeframe: Aug 2016 - May 2017
+
+Link : TBA
+
+Screenshot Captions:
+none

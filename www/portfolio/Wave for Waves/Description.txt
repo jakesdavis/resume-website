@@ -1,0 +1,15 @@
+Overview
+
+Wave for Waves is a city destruction game with a Leap Motion controller input developed in under 48h as part of Global Game Jam 2017.
+
+My Role
+
+Game Designer
+Unity/C# Programmer
+
+Timeframe : Jan 2017
+
+Link: http://globalgamejam.org/2017/games/wave-waves
+
+Screenshot Captions:
+none

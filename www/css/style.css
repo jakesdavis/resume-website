@@ -321,26 +321,6 @@ p {
   vertical-align: middle;
 }
 
-.footer label {
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-}
-
-.footer .social {
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-  /* background-image: url(../img/social.png); */
-  background-size: 469px;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 30px;
-  text-align: center;
-  font-size: 23px;
-  line-height: 34px;
-}
-
 #contact .social {
   height: 50px;
   width: 59px;
@@ -393,10 +373,8 @@ p {
 }
 
 .footer a span.description {
-  /*width: 0;*/
-  /*height: 0;*/
-  transform: scale(0);
-  opacity: 0;
+  width: 0;
+  height: 0;
   transition: 200ms all;
   display: inline-block;
   overflow: hidden;
@@ -411,37 +389,6 @@ p {
   width: auto;
   height: auto;
   vertical-align: middle;
-}
-
-.footer>label input[type='radio'] {
-  display: none;
-}
-
-.footer>label input[type='radio']:checked+a>span.description {
-  font-size: 22px;
-  color: #b3b3b3;
-  padding: 0 10px 0 0px;
-  width: auto;
-  height: auto;
-  transform: scale(1);
-  opacity: 1;
-  vertical-align: middle;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  /* background-color: #303131; */
-  padding: 10px;
-  /* width: 100%; */
-  text-align: right;
-  font-size: 13px;
-  max-width: 42%;
-  word-wrap: break-word;
-  line-height: 38px;
-  text-align: center;
-  height: 100%;
-  vertical-align: middle;
-  white-space: pre;
-  text-overflow: ellipsis;
 }
 
 .tooltip.top .tooltip-arrow {
@@ -460,23 +407,4 @@ p {
 ::-moz-selection {
   background-color: #000;
   color: #ffffff;
-}
-
-#portfolio .page-content:after {
-  content: "";
-  height: 47px;
-  width: 47px;
-  display: block;
-}
-
-#home .v-align-content:before,
-#home .v-align-content:after {
-  content: "";
-  height: 47px;
-  width: 47px;
-  display: block;
-}
-
-.footer>div {
-  display: inline-block;
 }
