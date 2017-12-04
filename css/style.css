@@ -70,7 +70,7 @@ body.done section {
 .section {
   width: 100%;
   min-height: 100%;
-  /* position: absolute; */
+  position: absolute;
   /* top: 0; */
   /* right: 0; */
   transition: 300ms transform;
@@ -80,7 +80,6 @@ body.done section {
   /* overflow: auto; */
   background-color: #F2F4F5;
   color: #40505B;
-  position: relative;
   margin: 0;
   margin-top: 0px;
   border: none;

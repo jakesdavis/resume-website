@@ -61,6 +61,9 @@
 
             });
 
+            $(".list-group-item, .section").removeClass("active");
+            nextSection.addClass("active");
+            nextMenu.addClass("active");
 
             $(".menu-wrapper").toggleClass("slide-in-left");
             $(".menu-icon .glyphicon").toggleClass("glyphicon-remove");
@@ -176,4 +179,7 @@
         });
     });
     imageHandlers();
+    setTimeout(() => {
+        $("#menu > nav > ul > li.list-group-item:first-child").click();
+    }, 10);
 }());
